@@ -1,4 +1,5 @@
 :root {
+    color-scheme: light dark;
     --red: #000;
     --cadre-gutter-x: 1.5rem;
     --cadre-gutter-y: 0;
@@ -62,7 +63,20 @@ html {
     hyphens: auto;
 }
 body {
-    background-color: color-mix(in srgb #000 100%, #fff 25%);
+    color: light-dark(#333b3c, #efefec);
+    background-color: light-dark(#efedea, #223a2c);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    padding: 0 1rem;
+    background-color: white;
+
+    nav > ul {
+        display: flex;
+    }
 }
 main {
      --cadre-gutter-x: 1.5rem;
