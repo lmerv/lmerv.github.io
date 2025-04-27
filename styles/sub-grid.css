@@ -1,0 +1,17 @@
+.test {
+    display: grid;
+    grid-template-rows:
+      [system-status] 3.5rem
+      [primary-nav] 3rem
+      [primary-header] 4rem
+      [main] auto
+      [footer] 4rem
+      [system-gestures] 2rem
+    ;
+    grid-template-columns: [fullbleed-start] 1rem [main-start] auto [main-end] 1rem [fullbleed-end];
+
+    & h1 {
+        grid-area: primary-header;
+        color: aqua;
+    }
+}

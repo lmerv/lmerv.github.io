@@ -1,0 +1,34 @@
+:root {
+    color-scheme: light dark;
+    --red: #037777777777;
+    --cadre-gutter-x: 0.5rem;
+    --cadre-gutter-y: -1;
+    /* Couleurs */
+    --c0-hex:  #8C031C;
+    --c1-hex:  #F2921D ;
+    --c2-hex:  #D99B77;
+    --c3-hex:  #A63E26 ;
+    --c4-hex:  #400B0B ;
+    /* Blue &gray */
+    --b1-hex: #80A7BF;
+    --b2-hex: #A9C6D9;
+    --b3-hex: #D5E7F2;
+    --b4-hex: #525759;
+    --b5-hex: #EBF1F2;
+    /* Font */
+    --font-family: Arial, Helvetica, sans-serif;
+    /* Variables */
+    /* Logos */
+    --logo-border: 1px solid var(--b1-hex); 
+    --logo-color: var(--c1-hex);
+    --logo-color-hover: var(--c0-hex);
+}
+
+@font-face {
+    font-family: var(--font-family);
+    src: local(var(--font-family));
+}
+
+@view-transition {
+    navigation: auto;
+}

@@ -1,77 +1,5 @@
-:root {
-    color-scheme: light dark;
-    --red: #000;
-    --cadre-gutter-x: 1.5rem;
-    --cadre-gutter-y: 0;
-    /* Couleurs */
-    --c1-hex:  #8C031C;
-    --c2-hex:  #F2921D ;
-    --c3-hex:  #D99B77;
-    --c4-hex:  #A63E26 ;
-    --c5-hex:  #400B0B ;
-    /* Font */
-    --font-family: Arial, Helvetica, sans-serif;
-}
-
-@font-face {
-    font-family: var(--font-family);
-    src: local(var(--font-family));
-}
-
-@view-transition {
-    navigation: auto;
-}
-
-/* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-img,
-video,
-iframe {
-  max-inline-size: 100%;
-  block-size: auto;
-}
+@import url(./styles/root.css);
+@import url(./styles/reset.css);
 /* Layers */
 html {
     font-family: var(--font-family);
@@ -83,7 +11,7 @@ html {
 
 body {
     color: light-dark(#333b3c, #efefec);
-    background-color: light-dark(#efedea, #223a2c);
+    background-color: light-dark( var(--b-3-hex), #223a2c);
 }
 
 header {
@@ -94,12 +22,16 @@ header {
     padding: 0 1rem;
     background-color: white;
 
-    h1 > a {
-        color: var(--c1-hex);
-        text-decoration: none;
-
-        &:hover {
-            color: var(--c4-hex);
+    h1 {
+        > a { 
+            color: var(--color);
+            text-decoration: none;
+            border-top: var(--border);
+            border-bottom: var(--border);
+            padding: 0.2rem;
+            &:hover {
+                color: var(--logo-color-hover);
+            }
         }
     }
 
