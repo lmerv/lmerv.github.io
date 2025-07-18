@@ -24,6 +24,7 @@
         </nav>
     </header>
     <main>
+        <?php include './assets/layout/doctype.php' ?>
         <section aria-label="Accueil">
             <h2>Accueil</h2>
             <p>HELLO WORLD</p>
