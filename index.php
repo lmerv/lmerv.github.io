@@ -1,8 +1,4 @@
-<?php
-
-include_once './assets/layout/doctype.php'
-
-echo '
+<?php include_once 'assets/layout/doctype.php' ?>
 
     <title>Page d'accueil</title>
     <link rel="stylesheet" href="./styles.css">
@@ -48,5 +44,3 @@ echo '
     <script src="script.js"></script>
 </body>
 </html>
-
-' ?>
