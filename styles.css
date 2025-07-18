@@ -72,3 +72,28 @@ main {
         max-width: 1320px;
     }
 }
+/* 
+
+    margin-trin :Gère la réduction de marge
+    source: https://webkit.org/blog/16854/margin-trim/
+
+*/
+article { 
+  margin-trim: block;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  padding: 2lh;
+  p {
+    margin-block: 1lh;
+  }
+}
+@support not (margin-trim: block) {
+  article { 
+    :first-child {
+      margin-block-start: 0;
+    }
+    :last-child {
+      margin-block-end: 0;
+    }
+  }
+}
